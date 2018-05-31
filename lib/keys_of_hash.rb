@@ -5,7 +5,8 @@ class Hash
     # code goes here
     key_array = []
     self.each do |key, value|
-      if value == arguments
+      arguments.each do |argument|
+      if value == argument
         key_array << key
       end
     end
