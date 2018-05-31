@@ -1,3 +1,5 @@
+require 'pry'
+
 class Hash
   def keys_of(*arguments)
     # code goes here
@@ -5,7 +7,7 @@ class Hash
     self.each do |key, value|
       if value == arguments
         key_array << key
-        
+        binding.pry
       end
     end
     key_array
