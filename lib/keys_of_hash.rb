@@ -6,7 +6,7 @@ class Hash
       if value == arguments
         key_array << key
       end
-    end 
+    end
+    key_array
   end
-  key_array
 end
